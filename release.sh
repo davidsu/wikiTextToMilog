@@ -1,7 +1,7 @@
 rm -rf build
 mkdir build
 cp ./background.js ./build/background.js
-vim -c 'source ./increaseVersion.vim' manifest.json
+nvim -u NONE -c 'source ./increaseVersion.vim' --headless manifest.json
 cp ./manifest.json ./build/manifest.json
 cp ./script.js ./build/script.js
 # rm build.zip
