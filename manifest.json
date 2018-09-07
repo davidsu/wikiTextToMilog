@@ -1,0 +1,22 @@
+{
+    "name": "hebrewToMilog",
+    "version": "0.0.11",
+    "manifest_version": 2,
+    "description": "double click hebrew word to open in milog",
+    "content_scripts": [
+        {
+            "js": [
+                "background.js"
+            ],
+            "matches": [
+                "https://he.wikisource.org/*",
+                "http://ateret4u.com/*",
+                "https://he.wikipedia.org/*"
+            ],
+            "all_frames": true
+        }
+    ],
+    "web_accessible_resources": [
+        "script.js"
+    ]
+}
